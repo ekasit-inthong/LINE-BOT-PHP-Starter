@@ -1,5 +1,5 @@
 <?php
-echo "Hi Test welcome to thailand" . "\r\n";
+echo "Welcome to thailand" . "\r\n";
 require("pub.php");
 
 $responsemsg = getMqttfromlineMsg("AirCond003/Temperature");
