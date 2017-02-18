@@ -19,12 +19,11 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			getMqttfromlineMsg($text);
+			$responsemsg = getMqttfromlineMsg($text);
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $responsemsg    //$text
 			];
-
 			
 			
 			// Make a POST Request to Messaging API to reply to sender
