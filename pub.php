@@ -44,10 +44,7 @@
       	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
 	    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-            //curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-            //curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-	    //curl_setopt($ch, CURLOPT_POSTFIELDS, $tmsg);
-	    curl_setopt($ch, CURLOPT_USERPWD, "E9hGA0mNypTPQrm:eQLdZGx8csxuHIWkQTWRXQyZK");
+ 	    curl_setopt($ch, CURLOPT_USERPWD, "BkNZinYfmYYI37K:xv9aFOvy8mdrueFpLPt7UmbSb");
            
       	    $result = curl_exec($ch);
 	    curl_close($ch);
