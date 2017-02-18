@@ -18,7 +18,7 @@
             //pubMqtt($topic,$msg);
 	    getMqtt($topic);
         }else{
-            $topic = "raw";
+            $topic = $lineMsg;
             $msg = $lineMsg;
             //pubMqtt($topic,$msg);
 	    getMqtt($topic);	
