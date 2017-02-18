@@ -44,7 +44,7 @@
       	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
 	    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
- 	    curl_setopt($ch, CURLOPT_USERPWD, "BkNZinYfmYYI37K:xv9aFOvy8mdrueFpLPt7UmbSb");
+ 	    curl_setopt($ch, CURLOPT_USERPWD, "ZLniUs1D3CruhvW:QMrJJpDqjDDwt9DUdFbqIhPWz");
            
       	    $result = curl_exec($ch);
 	    curl_close($ch);
