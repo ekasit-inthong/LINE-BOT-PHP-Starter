@@ -1,7 +1,7 @@
 <?php
-echo "Hi Test welcome to thailand";
+echo "Hi Test welcome to thailand" . "\r\n";
 require("pub.php");
 
 $responsemsg = getMqttfromlineMsg("AirCond003/Temperature");
-echo $responsemsg;
-echo "Pass this line alredy";
+echo $responsemsg . "\r\n";
+echo "Pass this line alredy" . "\r\n";
