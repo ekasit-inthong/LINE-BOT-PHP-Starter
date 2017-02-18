@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 			$responsemsg = getMqttfromlineMsg($text);
 			$messages = [
 				'type' => 'text',
-				'text' => $responsemsg    //$text
+				'text' => $text + $responsemsg    //$text
 			];
 			
 			
