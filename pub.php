@@ -15,13 +15,13 @@
             $splitMsg = explode(":", $lineMsg);
             $topic = $splitMsg[0];
             $msg = $splitMsg[1];
-            pubMqtt($topic,$msg);
-	    //getMqtt($topic);
+            //pubMqtt($topic,$msg);
+	    getMqtt($topic);
         }else{
             $topic = "raw";
             $msg = $lineMsg;
-            pubMqtt($topic,$msg);
-	    //getMqtt($topic);	
+            //pubMqtt($topic,$msg);
+	    getMqtt($topic);	
         }
      }
      
