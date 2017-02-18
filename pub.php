@@ -39,7 +39,7 @@
       	    return $result;
       }
 
-     function get($url,$tmsg){
+     function get($url){
 	    $ch = curl_init($url);
       	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
