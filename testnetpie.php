@@ -13,6 +13,11 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+			// Ekasit Test Add
+			$ch = curl_init("https://api.netpie.io/topic/gearname/AirCondData016/Humidity?auth=BkNZinYfmYYI37K:xv9aFOvy8mdrueFpLPt7UmbSb";
+			$text = curl_exec($ch);
+			curl_close ($ch);			
+			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
