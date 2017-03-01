@@ -19,9 +19,9 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
 			$text = curl_exec($ch);
 			curl_close ($ch);			
-			$obj = json_decode($text, TRUE);
-			$topic = $obj->topic;
-			$data = $obj->['payload'];
+			$obj = json_decode($text, true);
+			$topic = $obj['topic'];
+			$data = $obj['payload'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
