@@ -20,8 +20,8 @@ if (!is_null($events['events'])) {
 			$text = curl_exec($ch);
 			curl_close ($ch);			
 			$obj = json_decode($text, true);
-			$topic = $obj['topic'];
-			$data = $obj['payload'];
+			$mytopic = $obj['topic'];
+			$mydata = $obj['payload'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -29,8 +29,8 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 				'text' => $text ,
-				'topic' => $topic,
-				'data' => $data
+				'topic' => $mytopic,
+				'data' => $mydata
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
