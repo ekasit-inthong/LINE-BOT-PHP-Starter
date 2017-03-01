@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			$text = curl_exec($ch);
 			curl_close ($ch);			
 			$obj = json_decode($text, TRUE);
-			$topic = $obj->['topic'];
+			$topic = $obj->topic;
 			$data = $obj->['payload'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
