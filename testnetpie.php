@@ -20,15 +20,15 @@ if (!is_null($events['events'])) {
 			$text = curl_exec($ch);
 			curl_close ($ch);			
 			$obj = json_decode($text, true);
-			$topic = $obj['topic'];
-			$data = $obj['payload'];
+			echo $obj['topic'];
+			echo $obj['payload'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $topic
+				'text' => $text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
