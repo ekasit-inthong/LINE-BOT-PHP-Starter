@@ -25,6 +25,6 @@ $obj = json_decode($text, true);
 echo $obj[1]->topic;
 echo $obj[1]->payload;
 
-echo $obj[1]['topic']
+echo $obj[1]['topic'];
   
-echo "End of File";
+echo "End of File2222";
