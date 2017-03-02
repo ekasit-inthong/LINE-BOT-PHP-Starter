@@ -19,5 +19,5 @@ curl_close ($ch);
 echo $text . "\r\n";
 
 $obj = json_decode($text, true);
-echo $obj=>['topic'];
-echo $obj=>['payload'];
+echo $obj['topic'];
+echo $obj['payload'];
