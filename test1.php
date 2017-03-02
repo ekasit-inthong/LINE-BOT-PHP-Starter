@@ -22,8 +22,6 @@ $text = curl_exec($ch);
 curl_close ($ch);                       
 echo $text . "\r\n";
 
-$obj = json_decode($text);
-echo $obj[0];
 
 echo "End of File 3333";
 
