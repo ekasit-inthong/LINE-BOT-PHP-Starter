@@ -5,8 +5,3 @@ curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
 $text = curl_exec($ch);
 curl_close ($ch);                       
 echo $text;
-$obj = json_decode($text, true);
-$mytopic = $obj['topic'];
-$mydata = $obj['payload'];
-echo $mytopic;
-echo $mydata;
