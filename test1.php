@@ -22,13 +22,10 @@ $text = curl_exec($ch);
 curl_close ($ch);                       
 echo $text . "\r\n";
 
-$obj = json_decode($text, true);
-echo $obj[1]->topic;
-echo $obj[1]->payload;
+$obj = json_decode($text);
+echo $obj[0]
 
-echo $obj[1]['topic'];
-  
-echo "End of File2222";
+echo "End of File 3333";
 
 $json = '["apple","orange","banana","strawberry"]';
 $ar = json_decode($json);
