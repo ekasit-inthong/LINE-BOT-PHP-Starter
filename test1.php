@@ -10,6 +10,9 @@ $result = curl_exec($ch);
 curl_close($ch);
 echo $result . "\r\n";
 
+$sline = json_decode($result, true);
+echo $sline->channelId;
+
 echo "NETPIE";
 $ch = curl_init();
 curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/NGBox03?auth=21CTvyzpbA8Aafa:dZ4rx0MvMin1uKxF4z0c2VUKX");
