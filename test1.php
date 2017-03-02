@@ -37,6 +37,6 @@ $json = '[
     }
 ]';
 
-$books = json_decode($json);
+$books = json_decode($text);
 // access property of object in array
-echo $books[0]->title; // JavaScript: The Definitive Guide
+echo $books[0]->topic; // JavaScript: The Definitive Guide
