@@ -1,0 +1,19 @@
+$ch = curl_init();
+18
+curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/NGBox03?auth=21CTvyzpbA8Aafa:dZ4rx0MvMin1uKxF4z0c2VUKX");
+19
+curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+20
+$text = curl_exec($ch);
+21
+curl_close ($ch);                       
+22
+$obj = json_decode($text, true);
+23
+$mytopic = $obj['topic'];
+24
+$mydata = $obj['payload'];
+25
+echo $mytopic;
+26
+echo $mydata;
