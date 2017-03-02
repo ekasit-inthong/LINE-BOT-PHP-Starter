@@ -24,3 +24,5 @@ echo $text . "\r\n";
 $obj = json_decode($text, true);
 echo $obj[1]->topic;
 echo $obj[1]->payload;
+
+echo "End of File";
