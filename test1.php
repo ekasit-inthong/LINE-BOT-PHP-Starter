@@ -31,3 +31,22 @@ $json = '["apple","orange","banana","strawberry"]';
 $ar = json_decode($json);
 // access first element of $ar array
 echo $ar[0]; // apple
+
+$json = '[
+    {
+        "title": "Professional JavaScript",
+        "author": "Nicholas C. Zakas"
+    },
+    {
+        "title": "JavaScript: The Definitive Guide",
+        "author": "David Flanagan"
+    },
+    {
+        "title": "High Performance JavaScript",
+        "author": "Nicholas C. Zakas"
+    }
+]';
+
+$books = json_decode($json);
+// access property of object in array
+echo $books[1]->title; // JavaScript: The Definitive Guide
