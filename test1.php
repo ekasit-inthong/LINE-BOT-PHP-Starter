@@ -23,20 +23,9 @@ curl_close ($ch);
 echo $text . "\r\n";
 
 
-echo "End of File 3333";
-
-$json = '["apple","orange","banana","strawberry"]';
-$ar = json_decode($json);
-// access first element of $ar array
-echo $ar[0]; // apple
-
-$json = '[
-    {
-        "title": "Professional JavaScript",
-        "author": "Nicholas C. Zakas"
-    }
-]';
+echo "End of File 4444";
 
 $books = json_decode($text);
 // access property of object in array
 echo $books[0]->topic; // JavaScript: The Definitive Guide
+echo $books[0]->payload;
