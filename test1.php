@@ -8,9 +8,9 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 $result = curl_exec($ch);
 curl_close($ch);
-echo $result;
+echo $result ./r/n;
 
-echo "test";
+echo "NETPIE";
 $ch = curl_init();
 curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/NGBox03?auth=21CTvyzpbA8Aafa:dZ4rx0MvMin1uKxF4z0c2VUKX");
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
