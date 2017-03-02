@@ -14,42 +14,13 @@ curl_close($ch);
 
 echo $result;
 			
-/ Ekasit Test Add
-
-			$ch = curl_init();
-
-			curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/NGBox03?auth=21CTvyzpbA8Aafa:dZ4rx0MvMin1uKxF4z0c2VUKX");
-
-			curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
-
-			$text = curl_exec($ch);
-
-			curl_close ($ch);			
-
-			$obj = json_decode($text, true);
-
-			$mytopic = $obj['topic'];
-
-			$mydata = $obj['payload'];
-
-			// Get replyToken
-
-			$replyToken = $event['replyToken'];
-
-      echo $mytopic;
-      echo $mydata;
-
-			// Build message to reply back
-
-			$messages = [
-
-				'type' => 'text',
-
-				'text' => $text ,
-
-				'topic' => $mytopic,
-
-				'data' => $mydata
-
-			];
-
+$ch = curl_init();
+curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/NGBox03?auth=21CTvyzpbA8Aafa:dZ4rx0MvMin1uKxF4z0c2VUKX");
+curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+$text = curl_exec($ch);
+curl_close ($ch);			
+$obj = json_decode($text, true);
+$mytopic = $obj['topic'];
+$mydata = $obj['payload'];
+echo $mytopic;
+echo $mydata;
