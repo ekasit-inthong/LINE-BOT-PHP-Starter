@@ -14,7 +14,7 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Ekasit Test Add
-			$netpieurl = "https://api.netpie.io/topic/NSETEnergySaving/AirCond001/Temperature?auth=E9hGA0mNypTPQrm:eQLdZGx8csxuHIWkQTWRXQyZK"
+			$netpieurl = "https://api.netpie.io/topic/SmartNSET/SmartWeight01?auth=P0CqrrFZn3bUfRn:eJYbG9NHWkn9fzqdcuJatOcer"
 			
 			$ch = curl_init();
 			curl_setopt($ch,CURLOPT_URL,$netpieurl);
