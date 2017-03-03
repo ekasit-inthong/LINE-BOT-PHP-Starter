@@ -14,10 +14,8 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Ekasit Test Add
-			$netpieurl = "https://api.netpie.io/topic/SmartNSET/NGBox03?auth=n0PlLs4QUER78p9:6HECUvJ23BtRh9ylrMWm3KXnH"
-			
 			$ch = curl_init();
-			curl_setopt($ch,CURLOPT_URL,$netpieurl);
+			curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/NGBox03?auth=n0PlLs4QUER78p9:6HECUvJ23BtRh9ylrMWm3KXnH");
 			curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
 			$text = curl_exec($ch);
 			curl_close ($ch);			
