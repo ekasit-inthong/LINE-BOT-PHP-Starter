@@ -30,10 +30,10 @@ if (!is_null($events['events'])) {
 				     curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/NGBox03?auth=n0PlLs4QUER78p9:6HECUvJ23BtRh9ylrMWm3KXnH");					
 				     break;
 				case "AirCond01":
-				     curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/AirCond01/Temperature?auth=E9hGA0mNypTPQrm:eQLdZGx8csxuHIWkQTWRXQyZK");					
+				     curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/NSETEnergySaving/AirCond01/Temperature?auth=E9hGA0mNypTPQrm:eQLdZGx8csxuHIWkQTWRXQyZK");					
 				     break;
 				case "AirCond02":
-				     curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/AirCond02/Temperature?auth=7s9IDdrW0xDqfeL:kKo3OSTvoW2WPEDZDp4CsZNM8");					
+				     curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/NSETEnergySaving/AirCond02/Temperature?auth=7s9IDdrW0xDqfeL:kKo3OSTvoW2WPEDZDp4CsZNM8");					
 				     break;
 				default:
 				     curl_setopt($ch,CURLOPT_URL,"https://api.netpie.io/topic/SmartNSET/SmartWeight01?auth=P0CqrrFZn3bUfRn:eJYbG9NHWkn9fzqdcuJatOcer");					
